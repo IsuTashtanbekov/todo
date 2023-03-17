@@ -101,13 +101,13 @@ const Article = (props) => {
                             <div>
 
                             </div>
-                            {/* <h3>{cards.name}</h3>
+                            <h3>{cards.name}</h3>
                             <div>
                             <div>
                                 Desdcription: {cards.description}
                             </div>
-                            <div>Date:{cards.dueData}</div> */}
-                            {/* </div> */}
+                            <div>Date:{cards.dueData}</div>
+                            </div>
                         </div>
                 </Modal>
                 <button 
