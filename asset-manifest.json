@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/IsuTashtanbekov/todo.git/static/css/main.ee93f7f0.css",
+    "main.js": "/IsuTashtanbekov/todo.git/static/js/main.18a36c09.js",
+    "static/media/background.png": "/IsuTashtanbekov/todo.git/static/media/background.414f227d270f533c6661.png",
+    "index.html": "/IsuTashtanbekov/todo.git/index.html",
+    "main.ee93f7f0.css.map": "/IsuTashtanbekov/todo.git/static/css/main.ee93f7f0.css.map",
+    "main.18a36c09.js.map": "/IsuTashtanbekov/todo.git/static/js/main.18a36c09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ee93f7f0.css",
+    "static/js/main.18a36c09.js"
+  ]
+}
