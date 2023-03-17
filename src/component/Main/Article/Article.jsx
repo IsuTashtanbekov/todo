@@ -24,7 +24,7 @@ const Article = (props) => {
     const [modalActive, setModalActive] = React.useState(false)
     const [description, setDescription] = React.useState()
     const [tasksTitle, setTasksTitle] = React.useState('')
-    const [editCard, setEditCard] = React.useState(false)
+    const [editCard, setEditCard] = React.useState(true)
 
 
     const updateTaskName = () => {
@@ -44,7 +44,7 @@ const Article = (props) => {
         id: v1(),
         name:  tasksTitle,
         description: description,
-        dueDate: '2023-04-01',
+        dueDate: Date.now(),
         priority: 'high',
         comments: [],
       };
