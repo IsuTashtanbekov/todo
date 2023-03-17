@@ -1,0 +1,27 @@
+.main {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+    background-color: #092954;
+    height: 40px;
+}
+
+.title {
+    color: #fff;
+}
+
+.input {
+    padding: 2px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    font-family: inherit;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+  

@@ -1,0 +1,38 @@
+.modal {
+    display: grid;
+    grid-template-areas: 
+    "Header Header Header"
+    "";
+}
+
+.header {
+    grid-area: "Header";
+}
+
+.main {
+    grid-area: "Main";
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+
+.description {
+    background-color: azure;
+    padding: 20px;
+}

@@ -1,0 +1,86 @@
+.article {
+    background-color: #F1F2F4;
+    display: grid;
+    grid-template-rows: 40px 1fr 40px;
+    min-width: 290px;
+    border-radius: 5px;
+    margin: 10px;
+    padding-bottom:20px ;
+}
+
+.taskCard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.cards {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #fff;
+    overflow-y: hidden;
+    -webkit-box-shadow: 0px 0px 20px -2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 20px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 20px -2px rgba(34, 60, 80, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.cardTitle {
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.addBtn {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.trelloBtn {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    background-color: #0079bf;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .trelloBtn:hover {
+    background-color: #026aa7;
+  }
+  
+  .trelloBtn:active {
+    background-color: #055a8c;
+    outline: none;
+  }
+
+  .addBlock {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+
+  .input {
+    padding: 2px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    font-family: inherit;
+  }
