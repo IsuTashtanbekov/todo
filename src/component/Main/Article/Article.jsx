@@ -6,11 +6,10 @@ import Modal from '../../UI/Modal/Modal'
 import { v1 } from 'uuid'
 import { deleteTasks } from '../../../Data/newCardReducer'
 import { updateTaskName } from '../../../Data/newCardReducer'
-import {AiFillEdit} from 'react-icons/ai'
 import {MdOutlineDeleteSweep} from 'react-icons/md'
 import {AiOutlinePlus} from 'react-icons/ai'
 import { updateListName } from '../../../Data/newCardReducer'
-// import ModalContent from '../../UI/ModalContent/ModalContent'
+import { addTask } from '../../../Data/newCardReducer'
 
 
 
@@ -24,12 +23,6 @@ const Article = (props) => {
     const [tasksTitle, setTasksTitle] = React.useState('')
     const [editCard, setEditCard] = React.useState(true)
 
-
-    const updateTaskName = () => {
-        // let text = event.currentTarget.value
-        // setEditCard(text)
-        // props.updateTaskName(props.updateTaskName(props.list.id, id, text))
-    }
 
     const onSwitchMode = () => {
         if(editMode === true) {
@@ -112,19 +105,6 @@ const Article = (props) => {
                 onClick={() => setModalActive(true)}
                 style={{background:"#aaa",margin:'2px'}}
                 className={s.trelloBtn}>Открыть карточку</button>
-                {/* <button 
-                style={{padding:'4px', margin:'2px', background:'none', color:'black' }}
-                className={s.trelloBtn}
-                onClick={() => setEditCardMode(true)}>
-                    <AiFillEdit/>
-                </button> */}
-                <Modal 
-                active={editCardMode}
-                setActive={setEditCardMode}>
-                    {/* <ModalContent>
-
-                    </ModalContent> */}
-                </Modal>
                 </li>
             })}
         </ul>
@@ -168,6 +148,7 @@ const mapStateToProps = (state) => {
 
 export default compose(
     connect(mapStateToProps, {
+        addTask,
         deleteTasks,
         updateTaskName,
         updateListName})
