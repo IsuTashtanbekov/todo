@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/IsuTashtanbekov/todo.git/static/css/main.a098b639.css",
-    "main.js": "/IsuTashtanbekov/todo.git/static/js/main.b697cb81.js",
-    "static/media/background.png": "/IsuTashtanbekov/todo.git/static/media/background.414f227d270f533c6661.png",
-    "index.html": "/IsuTashtanbekov/todo.git/index.html",
-    "main.a098b639.css.map": "/IsuTashtanbekov/todo.git/static/css/main.a098b639.css.map",
-    "main.b697cb81.js.map": "/IsuTashtanbekov/todo.git/static/js/main.b697cb81.js.map"
+    "main.css": "/todo/static/css/main.dd851122.css",
+    "main.js": "/todo/static/js/main.b697cb81.js",
+    "static/media/background.png": "/todo/static/media/background.414f227d270f533c6661.png",
+    "index.html": "/todo/index.html",
+    "main.dd851122.css.map": "/todo/static/css/main.dd851122.css.map",
+    "main.b697cb81.js.map": "/todo/static/js/main.b697cb81.js.map"
   },
   "entrypoints": [
-    "static/css/main.a098b639.css",
+    "static/css/main.dd851122.css",
     "static/js/main.b697cb81.js"
   ]
 }
