@@ -42,9 +42,9 @@ const ModalContent = ({title, cardTitle, description, onCLoseClick}) => {
           </div>
         </main>
         <aside className={s.aside}>
-              <MyButton title={'Чек лист'} />
+              {/* <MyButton title={'Чек лист'} />
               <MyButton title={'Обложка'} />
-              <MyButton title={'Удалить'} />
+              <MyButton title={'Удалить'} /> */}
         </aside>
         </div>
     </div>

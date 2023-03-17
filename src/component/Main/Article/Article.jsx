@@ -3,9 +3,6 @@ import s from './Article.module.css'
 import { compose } from 'redux'
 import { connect } from 'react-redux'
 import Modal from '../../UI/Modal/Modal'
-import { filterItemsAction } from '../../../Data/cardReducer'
-import { addCartAction } from '../../../Data/cardReducer'
-import { addTask } from '../../../Data/newCardReducer'
 import { v1 } from 'uuid'
 import { deleteTasks } from '../../../Data/newCardReducer'
 import { updateTaskName } from '../../../Data/newCardReducer'
@@ -13,6 +10,7 @@ import {AiFillEdit} from 'react-icons/ai'
 import {MdOutlineDeleteSweep} from 'react-icons/md'
 import {AiOutlinePlus} from 'react-icons/ai'
 import { updateListName } from '../../../Data/newCardReducer'
+// import ModalContent from '../../UI/ModalContent/ModalContent'
 
 
 
@@ -120,10 +118,13 @@ const Article = (props) => {
                 onClick={() => setEditCardMode(true)}>
                     <AiFillEdit/>
                 </button> */}
-                {/* <Modal 
+                <Modal 
                 active={editCardMode}
                 setActive={setEditCardMode}>
-                </Modal> */}
+                    {/* <ModalContent>
+
+                    </ModalContent> */}
+                </Modal>
                 </li>
             })}
         </ul>
@@ -161,14 +162,15 @@ const Article = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        card: state.Card.card,
-        cardTitle: state.Card.cardTitle,
         Boards: state.Board.lists
     }
 }
 
 export default compose(
-    connect(mapStateToProps, {filterItemsAction, addCartAction, addTask, deleteTasks, updateTaskName, updateListName})
+    connect(mapStateToProps, {
+        deleteTasks,
+        updateTaskName,
+        updateListName})
 )(Article)
 
 

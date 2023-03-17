@@ -1,39 +1,43 @@
-import React from 'react'
-import s from './MainHeader.module.css'
+import React, { useState } from 'react';
+import s from './MainHeader.module.css';
 import { RiShareForwardFill } from 'react-icons/ri';
-import { MyButton } from '../../UI/Button/MyButton';
+import { MyButton } from '../../UI/Button/Button';
 
-export const MainHeader = () => {
-  const [title, setTitle] = React.useState('Ежедневные задачи')
-  const [editMode, setEditMode] = React.useState(true)
+const MainHeader = () => {
+  const [title, setTitle] = useState('Ежедневные задачи');
+  const [editMode, setEditMode] = useState(true);
+
   const onSetTitle = (event) => {
-    let inputValue = event.target.value
-    setTitle(inputValue)
-  }
-
+    const inputValue = event.target.value;
+    setTitle(inputValue);
+  };
 
   return (
     <div className={s.main}>
-        <div className={s.column}>
-          {editMode? 
-          <span
-          onClick={() => setEditMode(false)} 
-          className={s.title}>
-            {`Заголовок: ${title}`}</span> :
-           <input 
-           type='text' 
-           autoFocus={true} 
-           value={title} 
-           onChange={onSetTitle} 
-           onClick={() => setEditMode(true)}
-           className={s.input}/> }  
-        </div>
-        <div className={s.column}>
-          <MyButton>
-            Поделиться
-          <RiShareForwardFill/>
-          </MyButton>
-        </div>
+      <div className={s.column}>
+        {editMode ? (
+          <span onClick={() => setEditMode(false)} className={s.title}>
+            Заголовок: {title}
+          </span>
+        ) : (
+          <input
+            type="text"
+            autoFocus={true}
+            value={title}
+            onChange={onSetTitle}
+            onClick={() => setEditMode(true)}
+            className={s.input}
+          />
+        )}
+      </div>
+      <div className={s.column}>
+        <button>
+          Поделиться
+          <RiShareForwardFill />
+        </button>
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default MainHeader;
