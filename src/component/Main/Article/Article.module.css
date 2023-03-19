@@ -6,6 +6,8 @@
     border-radius: 5px;
     margin: 10px;
     padding-bottom:20px ;
+    overflow-y: hidden;
+    
 }
 
 .taskCard {
@@ -70,6 +72,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    overflow-x: hidden;
   }
   
 
@@ -80,4 +83,9 @@
     font-size: 16px;
     color: #333;
     font-family: inherit;
+  }
+
+  .closeBtn {
+    background: none;
+    padding: 10px;
   }

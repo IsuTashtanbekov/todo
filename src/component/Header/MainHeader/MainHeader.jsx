@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
 import s from './MainHeader.module.css';
 import { RiShareForwardFill } from 'react-icons/ri';
-import { MyButton } from '../../UI/Button/Button';
+import { ShareButton } from '../../UI/ShareButton/ShareButton';
 
 const MainHeader = () => {
   const [title, setTitle] = useState('Ежедневные задачи');
   const [editMode, setEditMode] = useState(true);
-
-  const onSetTitle = (event) => {
-    const inputValue = event.target.value;
-    setTitle(inputValue);
-  };
-
+ 
   return (
     <div className={s.main}>
       <div className={s.column}>
@@ -24,17 +19,16 @@ const MainHeader = () => {
             type="text"
             autoFocus={true}
             value={title}
-            onChange={onSetTitle}
+            onChange={setTitle}
             onClick={() => setEditMode(true)}
             className={s.input}
           />
         )}
       </div>
       <div className={s.column}>
-        <button>
-          Поделиться
-          <RiShareForwardFill />
-        </button>
+        <ShareButton>
+
+        </ShareButton>
       </div>
     </div>
   );
