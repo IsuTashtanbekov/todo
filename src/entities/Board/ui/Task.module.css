@@ -1,0 +1,19 @@
+.Task {
+    display: flex;
+    width: 319px;
+    padding: 10px 16px;
+    /*flex-direction: column;*/
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.20);
+    background-color: #fff;
+    border-radius: 4px;
+    color: #1E1E1E;
+    margin: 10px 0 10px 0;
+    justify-content: space-around;
+}
+
+.Task .greenly {
+    background-color: var(--task-bg-color-greenly);
+    text-decoration: underline;
+}

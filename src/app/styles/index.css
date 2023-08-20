@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('../../app/styles/reset.css');
+@import url('../../app/styles/global.css');
+
+
+body {
+    font: var(--font-m);
+    overflow-y: scroll;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+

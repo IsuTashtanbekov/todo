@@ -1,0 +1,8 @@
+/*Цвет заднего фона*/
+:root {
+    --bg-color: #0077C3;
+    --font-m: 14px 'Roboto', sans-serif;
+    --board-bg-color: #e3e4e6;
+    --font-l: 20px 'Roboto', sans-serif;
+    --task-bg-color-greenly: #C1FFCF;
+}

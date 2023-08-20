@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "board" : {
+   "board1": {
+      "name": "Board 1",
+      "boardId": 1,
+      "tasks": [
+        {
+          "userId": 1,
+          "id": 1,
+          "title": "Task 1",
+          "completed": true,
+        }
+      ]
+    }
+  }
+  }
+

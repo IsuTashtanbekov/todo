@@ -1,0 +1,26 @@
+.Board {
+    background-color: var(--board-bg-color);
+    width: 340px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+}
+
+.boardTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title {
+    color: #40506C;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
